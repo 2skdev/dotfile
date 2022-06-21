@@ -8,4 +8,7 @@ source ~/.local/z/z.sh
 alias ..="cd .."
 alias cat="batcat"
 alias ls="exa --icons"
-alias ls="exa -ahl --icons"
+alias ll="exa -ahl --icons"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -59,3 +59,9 @@ cp .config/starship.toml ~/.config/
 sudo apt install -y tmux
 cp .tmux.conf ~/.tmux.conf
 ```
+
+## `fzf`
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
