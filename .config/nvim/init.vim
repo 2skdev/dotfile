@@ -1,7 +1,7 @@
 " Plugin
 call plug#begin('~/.nvim/plugged')
 
-Plug 'joshdick/onedark.vim'
+Plug 'kaicataldo/material.vim'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-git-status.vim'
 Plug 'itchyny/lightline.vim'
@@ -12,7 +12,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'evanleck/vim-svelte'
 
 " lightline theme
-let g:lightline = {'colorscheme': 'onedark'}
+let g:lightline = {'colorscheme': 'material_vim'}
+
+" material theme
+let g:material_theme_style = 'palenight'
 
 " disable easymotion mapping
 let g:EasyMotion_do_mapping = 0
@@ -55,10 +58,12 @@ set list                          " show space
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 syntax on                         " enable syntax
 set guifont=Cica:h12              " set font
-colorscheme onedark               " set color scheme
+colorscheme material              " set color scheme
 set termguicolors                 " true colro
 set encoding=utf-8                " encoding
 set fileencodings=utf-8,cp932     " read encoding
+
+let g:fern_disable_startup_warnings = 1
 
 " background none
 highlight Normal ctermbg=NONE guibg=NONE
