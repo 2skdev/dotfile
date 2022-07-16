@@ -38,14 +38,16 @@ echo 'source ~/.local/z/z.sh' >> .bashrc
 
 ## `neovim`
 ```bash
-sudo apt install -y python3-neovim
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.deb
+apt install ./nvim-linux64.deb
+git clone https://github.com/wbthomason/packer.nvim \
+  ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
 cp -r .config/nvim ~/.config/
 ```
 
 ### Install `neovim` plugin
 
-run on neovin `:PlugInstall`
+run on neovin `:PackerInstall` and `:PackerCompile`
 
 ## `starship`
 ```bash
