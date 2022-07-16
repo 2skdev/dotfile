@@ -11,11 +11,6 @@ require('packer').startup(function()
   }
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { 'nvim-lua/plenary.nvim' }
-  }
-
-  use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
@@ -24,8 +19,17 @@ require('packer').startup(function()
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
+ 
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
 
   use {
+    'terrortylor/nvim-comment'
+  }
+
+ use {
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
@@ -39,8 +43,9 @@ end)
 
 vim.cmd [[colorscheme palenight]]
 
-require('plugins.telescope')
 require('plugins.lualine')
 require('plugins.barbar')
+require('plugins.telescope')
+require('plugins.nvim-comment')
 require('plugins.nvim-tree')
 require('plugins.nvim-treesitter')

@@ -7,7 +7,7 @@ vim.g.mapleader = ' '
 map('i', 'jj', '<Esc>', { noremap = true, silent = false })
 
 -- toggle highlight
-map('n', '<Esc><Esc>', '<Cmd><C-u>set nohlsearch!<CR>', { noremap = false, silent = true })
+map('n', '<Esc><Esc>', '<Cmd>set nohlsearch!<CR>', { noremap = false, silent = true })
 
 -- file
 map('n', '<Leader>w', '<Cmd>w<CR>', { noremap = true, silent = false })
