@@ -15,6 +15,4 @@ set -x GOPATH $HOME/go
 set -x PATH $PATH $GOPATH/bin
 
 set -gx BD_OPT 'sensitive'
-set -g theme_color_scheme dracula
-
 
