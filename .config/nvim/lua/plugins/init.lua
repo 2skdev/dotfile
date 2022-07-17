@@ -16,8 +16,8 @@ require('packer').startup(function()
   }
 
   use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    'akinsho/bufferline.nvim', tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'
   }
  
   use {
@@ -44,7 +44,7 @@ end)
 vim.cmd [[colorscheme palenight]]
 
 require('plugins.lualine')
-require('plugins.barbar')
+require('plugins.bufferline')
 require('plugins.telescope')
 require('plugins.nvim-comment')
 require('plugins.nvim-tree')
