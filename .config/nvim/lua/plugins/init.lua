@@ -17,7 +17,7 @@ require('packer').startup(function()
 
   use {
     'akinsho/bufferline.nvim', tag = "v2.*",
-    requires = 'kyazdani42/nvim-web-devicons'
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
   use {
@@ -41,6 +41,10 @@ require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
+  use {
+    'TimUntersberger/neogit',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
   use {
     'lewis6991/gitsigns.nvim',
   }
@@ -84,6 +88,7 @@ require('plugins.telescope')
 require('plugins.hop')
 require('plugins.nvim-comment')
 require('plugins.nvim-tree')
+require('plugins.neogit')
 require('plugins.gitsigns')
 require('plugins.nvim-treesitter')
 require('plugins.nvim-lsp-installer')
