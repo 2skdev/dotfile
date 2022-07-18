@@ -12,7 +12,7 @@ cp .gitconfig ~/.gitconfig
 ## Install utils
 ```bash
 sudo apt install -y curl exa bat unzip
-``
+```
 
 ## `neovim`
 ```bash
