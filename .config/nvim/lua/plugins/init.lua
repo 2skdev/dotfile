@@ -26,6 +26,13 @@ require('packer').startup(function()
   }
 
   use {
+    'phaazon/hop.nvim', branch = 'v2',
+    config = function()
+      require('hop').setup({ keys = 'etovxqpdygfblzhckisuran' })
+    end
+  }
+
+  use {
     'terrortylor/nvim-comment'
   }
 
@@ -70,6 +77,7 @@ vim.cmd [[colorscheme palenight]]
 require('plugins.lualine')
 require('plugins.bufferline')
 require('plugins.telescope')
+require('plugins.hop')
 require('plugins.nvim-comment')
 require('plugins.nvim-tree')
 require('plugins.nvim-treesitter')
