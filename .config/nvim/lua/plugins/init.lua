@@ -42,6 +42,10 @@ require('packer').startup(function()
   }
 
   use {
+    'lewis6991/gitsigns.nvim',
+  }
+
+  use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
@@ -80,6 +84,7 @@ require('plugins.telescope')
 require('plugins.hop')
 require('plugins.nvim-comment')
 require('plugins.nvim-tree')
+require('plugins.gitsigns')
 require('plugins.nvim-treesitter')
 require('plugins.nvim-lsp-installer')
 require('plugins.nvim-cmp')
