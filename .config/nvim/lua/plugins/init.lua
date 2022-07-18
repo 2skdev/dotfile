@@ -19,7 +19,7 @@ require('packer').startup(function()
     'akinsho/bufferline.nvim', tag = "v2.*",
     requires = 'kyazdani42/nvim-web-devicons'
   }
- 
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { 'nvim-lua/plenary.nvim' }
@@ -29,7 +29,7 @@ require('packer').startup(function()
     'terrortylor/nvim-comment'
   }
 
- use {
+  use {
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
@@ -37,6 +37,30 @@ require('packer').startup(function()
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
+  }
+
+  use {
+    'L3MON4D3/LuaSnip'
+  }
+
+  use {
+    'neovim/nvim-lspconfig'
+  }
+  use {
+    'williamboman/nvim-lsp-installer'
+  }
+
+  use {
+    'hrsh7th/nvim-cmp'
+  }
+  use {
+    'hrsh7th/cmp-nvim-lsp'
+  }
+  use {
+    'hrsh7th/cmp-buffer'
+  }
+  use {
+    'onsails/lspkind.nvim'
   }
 
 end)
@@ -49,3 +73,6 @@ require('plugins.telescope')
 require('plugins.nvim-comment')
 require('plugins.nvim-tree')
 require('plugins.nvim-treesitter')
+require('plugins.nvim-lsp-installer')
+require('plugins.nvim-cmp')
+require('plugins.lspkind')
