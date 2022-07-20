@@ -16,4 +16,4 @@ require('nvim-tree').setup({
 
 local map = vim.api.nvim_set_keymap
 
-map('n', '<Leader>t', '<Cmd>NvimTreeToggle<CR>', { noremap = true, silent = false })
+map('n', '<Leader>T', '<Cmd>NvimTreeToggle<CR>', { noremap = true, silent = false })
