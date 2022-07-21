@@ -42,6 +42,15 @@ require('packer').startup(function()
   }
 
   use {
+    'akinsho/toggleterm.nvim', tag = 'v2.*',
+    config = function()
+      require('toggleterm').setup {
+        open_mapping = [[<C-\>]]
+      }
+    end
+  }
+
+  use {
     'TimUntersberger/neogit',
     requires = { 'nvim-lua/plenary.nvim' }
   }
