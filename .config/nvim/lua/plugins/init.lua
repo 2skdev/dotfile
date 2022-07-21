@@ -78,6 +78,15 @@ require('packer').startup(function()
     'onsails/lspkind.nvim'
   }
 
+  use {
+    'choro0121/nvim-config-local',
+    config = function()
+      require('config-local').setup {
+        config_files = { '.nvimrc.lua' },
+      }
+    end
+  }
+
 end)
 
 vim.cmd [[colorscheme palenight]]
