@@ -24,6 +24,9 @@ require('packer').startup(function()
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { 'nvim-lua/plenary.nvim' }
   }
+  use {
+    'nvim-telescope/telescope-file-browser.nvim'
+  }
 
   use {
     'phaazon/hop.nvim', branch = 'v2',
@@ -34,11 +37,6 @@ require('packer').startup(function()
 
   use {
     'terrortylor/nvim-comment'
-  }
-
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
   use {
@@ -105,7 +103,6 @@ require('plugins.bufferline')
 require('plugins.telescope')
 require('plugins.hop')
 require('plugins.nvim-comment')
-require('plugins.nvim-tree')
 require('plugins.neogit')
 require('plugins.gitsigns')
 require('plugins.nvim-treesitter')
