@@ -19,3 +19,27 @@ vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
     vim.api.nvim_exec('silent! normal! g`"zv', false)
   end,
 })
+
+-- keep directory
+local path = vim.fn.getcwd()
+vim.api.nvim_create_autocmd({ 'WinLeave' }, {
+  callback = function()
+    path = vim.fn.getcwd()
+  end
+})
+vim.api.nvim_create_autocmd({ 'WinEnter' }, {
+  callback = function()
+    vim.api.nvim_set_current_dir(path)
+  end
+})
+
+-- WSL yank
+vim.cmd[[
+if executable('/mnt/c/Windows/System32/clip.exe')
+  augroup WSLYank
+    autocmd!
+    autocmd TextYankPost * if v:event.operator ==# 'y' | call system('/mnt/c/Windows/System32/clip.exe', @0) | endif
+  augroup END
+endif
+]]
+

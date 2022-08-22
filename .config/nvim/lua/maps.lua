@@ -13,6 +13,7 @@ map('n', '<Esc><Esc>', '<Cmd>set nohlsearch!<CR>', { noremap = false, silent = t
 map('n', '<Leader>w', '<Cmd>w<CR>', { noremap = true, silent = false })
 map('n', '<Leader>q', '<Cmd>q<CR>', { noremap = true, silent = false })
 map('n', '<Leader>wq', '<Cmd>wq<CR>', { noremap = true, silent = false })
+map('n', '<Leader>x', '<Cmd>bp<bar>bd #<CR>', { noremap = true, silent = false })
 
 -- select line
 map('n', '<Leader>a', 'v$ho0', { noremap = true, silent = false })

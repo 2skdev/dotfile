@@ -86,6 +86,10 @@ require('packer').startup(function()
   }
 
   use {
+    'andymass/vim-matchup'
+  }
+
+  use {
     'choro0121/nvim-config-local',
     config = function()
       require('config-local').setup {
@@ -109,3 +113,4 @@ require('plugins.nvim-treesitter')
 require('plugins.nvim-lsp-installer')
 require('plugins.nvim-cmp')
 require('plugins.lspkind')
+require('plugins.vim-matchup')
