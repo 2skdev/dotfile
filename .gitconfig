@@ -23,14 +23,11 @@
 	mg = merge --no-ff
 	mgff = merge -ff
 	cp = cherry-pick
-	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
-	logo = log --oneline
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %C(green) %ar %Creset%x09%C(cyan ul)%an%C(reset) %x09%C(auto)%s %d'
+	logo = log --oneline --date=short --pretty=format:'%C(auto)%h %C(cyan)%an%C(reset) %C(auto)%s %d'
 	logn = log --name-status --oneline
 	sk = update-index --skip-worktree
 	nsk = update-index --no-skip-worktree
-	lsk = !git ls-files -v | grep ^S
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+
+[credential]
+	helper = store --file ~/.git-credential
