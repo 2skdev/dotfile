@@ -23,3 +23,9 @@ map('v', '<Leader>a', '$ho0', { noremap = true, silent = false })
 map('n', '<Leader>_', '<Cmd>sp<CR>', { noremap = true, silent = false })
 map('n', '<Leader><Bar>', '<Cmd>vs<CR>', { noremap = true, silent = false })
 
+-- delete
+map('n', 'x', '"_x', { noremap = true, silent = false })
+map('v', 'x', '"_x', { noremap = true, silent = false })
+map('v', 'D', '"_D', { noremap = true, silent = false })
+map('v', 'dw', '"_dw', { noremap = true, silent = false })
+
