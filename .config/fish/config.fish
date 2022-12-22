@@ -41,6 +41,10 @@ set -g tide_character_icon \uf054
 set -g tide_character_vi_icon_default \uf053
 set -g tide_character_vi_icon_replace \uf079
 set -g tide_character_vi_icon_visual \uf0a4
+set -g tide_context_bg_color $dark_gray
+set -g tide_context_color_default $orange
+set -g tide_context_color_root $orange
+set -g tide_context_color_ssh $orange
 set -g tide_cmd_duration_bg_color $dark_gray
 set -g tide_cmd_duration_color $yellow
 set -g tide_git_bg_color $green
