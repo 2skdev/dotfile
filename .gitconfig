@@ -31,3 +31,5 @@
 
 [credential]
 	helper = store --file ~/.git-credential
+[commit]
+  template = ~/.commit_template
