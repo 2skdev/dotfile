@@ -9,7 +9,7 @@
 #
 # [feat]
 # ✨  :sparkles: 新機能
-# ⚡️. :zap: 既存の機能に別の機能を追加
+# ⚡️  :zap: 既存の機能に別の機能を追加
 # 🚧  :construction: WIP
 # 💥  :boom: 重大な変更
 # ⏪️  :rewind: 変更を戻す
@@ -22,6 +22,7 @@
 # 📝  :memo: ドキュメントのみの変更
 # [style]
 # 🎨  :art: コードのフォーマットの変更
+# 💄  :lipstick: 機能が変化しないUIの変更
 # [refactor]
 # ♻️  :recycle: 機能が変化しないコードの変更
 # 🔥  :fire: 機能、ファイルの削除
