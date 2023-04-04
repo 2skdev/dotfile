@@ -18,3 +18,8 @@ local map = vim.api.nvim_set_keymap
 
 map('n', '<Leader>t', '<Cmd>NvimTreeToggle<CR>', { noremap = true, silent = false })
 map('n', '<Leader>s', '<Cmd>NvimTreeFindFile<CR>', { noremap = true, silent = false })
+
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
